@@ -5,7 +5,7 @@
     <li>
       <%= link_to kitten.name, kitten %> |
       <%= link_to "Edit", edit_kitten_path(kitten) %> |
-      <%= link_to "Delete", kitten, method: :delete, data: { confirm: "Are you sure?" } %>
+      <%= button_to "Delete", kitten, method: :delete, data: { confirm: "Are you sure?" } %>
     </li>
   <% end %>
 </ul>
